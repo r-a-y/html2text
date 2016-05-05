@@ -15,6 +15,7 @@
  * with PHP 5.2.  Updated to use newer algorithm from 0.3.1.
  *
  * @link https://github.com/soundasleep/html2text/
+ * @link https://github.com/r-a-y/html2text/tree/0.1.x
  ****************************************************************************/
 
 /**
