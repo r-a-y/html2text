@@ -178,6 +178,10 @@ function iterate_over_node($node) {
 			$output = "~~";
 			break;
 
+		case "code":
+			$output = "`";
+			break;
+
 		default:
 			// print out contents of unknown tags
 			$output = "";
@@ -301,6 +305,10 @@ function iterate_over_node($node) {
 
 		case "del":
 			$output .= "~~";
+			break;
+
+		case "code":
+			$output .= "`";
 			break;
 
 		default:
