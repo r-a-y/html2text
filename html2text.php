@@ -8,6 +8,13 @@
  *
  * Contributors:
  *    Jevon Wright - initial API and implementation
+ *    r-a-y - maintenance of 0.1 branch; slight mod to use a markdown syntax
+ *            for the <img> element
+ *
+ * Based off html2text 0.1.1 to maintain function approach and compatibility
+ * with PHP 5.2.  Updated to use newer algorithm from 0.3.1.
+ *
+ * @link https://github.com/soundasleep/html2text/
  ****************************************************************************/
 
 /**
