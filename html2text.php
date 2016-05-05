@@ -248,14 +248,19 @@ function iterate_over_node($node) {
 			}
 			break;
 
+		// mod by r-a-y
 		case "img":
-			if ($node->getAttribute("title")) {
-				$output = "[" . $node->getAttribute("title") . "]";
-			} elseif ($node->getAttribute("alt")) {
-				$output = "[" . $node->getAttribute("alt") . "]";
+			$alt = $node->getAttribute("alt");
+			$src = $node->getAttribute("src");
+
+			if ( ! empty( $alt ) ) {
+				$output = "![Image - $alt]";
 			} else {
-				$output = "";
+				$output = "![Image]";
 			}
+
+			$output .= "($src)";
+
 			break;
 
 		case "li":
